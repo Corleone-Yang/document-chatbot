@@ -1,0 +1,149 @@
+.container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow-y: auto;
+  color: white;
+  font-family: Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+}
+
+.backgroundVideo {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  transform: translateX(-50%) translateY(-50%);
+  object-fit: cover;
+  z-index: -2;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.3);
+  z-index: -1;
+}
+
+.header {
+  position: sticky;
+  top: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 40px;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
+
+.header h1 {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.contactLink {
+  color: white;
+  text-decoration: none;
+  font-size: 15px;
+  font-weight: bold;
+  display: inline-flex;
+  align-items: center;
+  transition: color 0.3s;
+}
+
+.contactLink:hover {
+  color: #f0f0f0;
+}
+
+.contactLink .arrow {
+  margin-left: 5px;
+  transition: transform 0.3s ease;
+  font-weight: bold;
+  font-size: 14px;
+  display: inline-flex;
+  align-items: center;
+  line-height: 1;
+}
+
+.contactLink:hover .arrow {
+  transform: translateX(5px);
+}
+
+.main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 40px;
+  max-width: 600px;
+}
+
+.title {
+  font-size: 48px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.description {
+  font-size: 16px;
+  line-height: 1.5;
+  margin-bottom: 40px;
+}
+
+.buttonContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 100%;
+  max-width: 300px;
+}
+
+.signInButton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  width: 100%;
+}
+
+.signInButton img {
+  margin-right: 10px;
+}
+
+.googleButton {
+  background-color: white;
+  color: #333;
+}
+
+.googleButton:hover {
+  background-color: #f0f0f0;
+}
+
+.facebookButton {
+  background-color: #1877F2;
+  color: white;
+}
+
+.facebookButton:hover {
+  background-color: #166fe5;
+}
+
+.error {
+  color: #ff6b6b;
+  margin-top: 20px;
+}
