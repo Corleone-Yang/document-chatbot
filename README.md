@@ -1,4 +1,5 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+This is a Doc-Chatbot.
+You can upload a document, and the chatbot will retrieve your doc by RAG, then it will generate a response based on the chunks and your query.
 
 ## Getting Started
 
